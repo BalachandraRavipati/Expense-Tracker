@@ -1,0 +1,142 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0px;
+  width: fit-content;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 22px 0px;
+  text-align: center;
+}
+
+.balanceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balanceText {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+button {
+  background-color: rgb(13, 29, 44);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+#inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  border: 1px solid rgb(230, 232, 233);
+  padding: 24px;
+  width: 360px;
+  border-radius: 4px;
+}
+
+input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid rgb(230 232, 233);
+}
+
+.categoryContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.addTransactionContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.amountSummary {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+  padding: 0px 12px;
+  width: 360px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  gap: 10px;
+  border: 1px solid rgb(230, 232, 233);
+  border-radius: 4px;
+  flex-grow: 1;
+}
+.cardTitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+#expenseAmount {
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#incomeAmount {
+  color: green;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.transactionHistory {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0px 12px;
+}
+
+.trasactionText {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#searchInput {
+  background-color: rgb(230, 232, 233);
+  border-radius: 12px;
+}
+
+#transactionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(230, 232, 233);
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.expense {
+  border-right-color: red;
+  border-right-width: 4px;
+}
+
+.income {
+  border-right-color: green;
+  border-right-width: 4px;
+}

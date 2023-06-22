@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">Expense Tracker</div>
+      <div class="balanceContainer">
+        <div class="balanceText">
+          Balance: <span id="balanceValue">$0</span>
+        </div>
+        <div><button id="button">CANCEL</button></div>
+      </div>
+      <div id="inputContainer">
+        <input type="number" placeholder="Amount" id="amount" />
+        <input type="text" placeholder="Description" id="description" />
+        <div class="categoryContainer">
+          <input type="radio" name="category" value="EXPENSE" id="expense" />
+          <label for="expense">Expense</label>
+          <input type="radio" name="category" value="INCOME" id="income" />
+          <label for="income">Income</label>
+        </div>
+        <div class="addTransactionContainer">
+          <button>Add Transaction</button>
+        </div>
+      </div>
+      <div class="amountSummary">
+        <div class="card">
+          <div class="cardTitle">Expense</div>
+          <div id="expenseAmount">$0</div>
+        </div>
+        <div class="card">
+          <div class="cardTitle">Income</div>
+          <div id="incomeAmount">$0</div>
+        </div>
+      </div>
+      <div class="transactionHistory">
+        <div class="trasactionText">Transactions</div>
+        <input type="text" placeholder="Search" id="searchInput" />
+        <div id="transactionContainer">
+          <!-- <div class="transaction expense">
+            <div>Salary</div>
+            <div>$100</div>
+          </div>
+          <div class="transaction income">
+            <div>Amount</div>
+            <div>$12</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
